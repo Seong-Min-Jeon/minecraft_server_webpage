@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>에일 구원의 서</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">  
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="#" /></a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" style="padding-left: 40em;"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="job.html">Job</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#item">Item</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quest">Quest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#map">Map</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="overlay">
+                <div class="container">
+                    <div>
+                        <h1><span style="color:rgb(128,0,16);">직업</span></h1>
+                        <br>
+                        <p><strong style="padding-left: 2em;"> 그대는 어떠한 힘을 가지고 계십니까.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="text-left" style="background-color: darkgray;">
+            <a class="nav-link" href="#first" style="color: yellow;">* 1차 직업</a>
+            <a class="nav-link" href="#second" style="color: rgb(248, 0, 248);">* 2차 직업</a>
+            <a class="nav-link" href="#third" style="color: aqua;">* 3차 직업</a>
+            <a class="nav-link" href="#fourth" style="color: rgb(128, 0, 16);">* 4차 직업</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="first">
+            <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">본 파이터</span><br><br></p>
+        </div>
+        
+
+        <footer>
+            <div class="server address text-center" style="background-color : rgb(250,250,250);color: black;">
+            <p>서버 주소: yumehama.kro.kr</a></p>
+        </footer>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);  
+                
+                $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+                
+                $('.navbar ul li a.search').on('click', function (e) {
+                    e.preventDefault();
+                });
+                $('.navbar a.search').on('click', function () {
+                    $('.navbar form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            })
+        </script>
+    </body>
+</html>
