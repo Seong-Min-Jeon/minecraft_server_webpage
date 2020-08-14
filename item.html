@@ -2,39 +2,62 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>에일 구원의 서</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">  
+
+        <style>
+            #topMenu {
+                    height: 42px;
+                    width: 850px;
+            }
+
+            #topMenu ul li {
+                    list-style: none;
+                    color: white;
+                    background-color: #2d2d2d;
+                    float: left;
+                    line-height: 42px;
+                    vertical-align: middle;
+                    text-align: center;
+            }
+
+            #topMenu .menuLink {
+                    text-decoration:none;
+                    color: white;
+                    display: block;
+                    width: 134px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: "Trebuchet MS";
+            }
+            #topMenu .menuLink:hover {
+                    color: red;
+                    background-color: #4d4d4d;
+            }
+
+        </style>
+        
     </head>
     <body>
         
-        <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
-            <div class="container">
-                <!-- <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="#" /></a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" style="padding-left: 40em;"> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html"> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="job.html">Job</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="item.html">Item</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#quest">Quest</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#map">Map</a>
-                        </li>
-                </div>
-            </div>
-        </nav>
+        <div style="background-color: rgb(62, 83, 123);">
+            <nav id="topMenu">
+                <ul>
+                    <li><a class="menuLink" href="index.html"> Home</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="job.html">Job</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="item.html">Item</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="#quest">Quest</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="#map">Map</a>
+                </ul>
+            </nav>
+        </div>
 
         <header>
             <div class="overlay">
@@ -42,7 +65,7 @@
                     <div>
                         <h1><span style="color:rgb(128,0,16);">아이템</span></h1>
                         <br>
-                        <p><strong style="padding-left: 2em;">좋은 아이템이 좋은 결과를 낳습니다.</strong></p>
+                        <p><strong style="padding-left: 2em; padding-right: 2em;">좋은 아이템이 좋은 결과를 낳습니다.</strong></p>
                     </div>
                 </div>
             </div>
@@ -62,8 +85,8 @@
             <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">무기</span><br><br></p>
         </div>
 
-        <div style="padding-left: 2em;">
-            <p>무기는 근거리 무기와 원거리 무기로 나뉘어진다. 무기는 상점에서 구매하거나 던전 보상 상자, 아이템 제작 시스템으로 얻을 수 있다. <br><br> 근거리 무기의 경우 강화를 통해 부여할 수 있는 인챈트는 추가데미지(모든 객체), 추가데미지(인간형), 추가데미지(벌레), 추가데미지(거대 객체), 스플레시, 반격이 있다. <br><br> 원거리 무기의 경우 추가데미지 인챈트만 강화할 수 있다.</p>    
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <p>무기는 근거리 무기와 원거리 무기로 나뉘어집니다. 무기는 상점에서 구매하거나 던전 보상 상자, 아이템 제작 시스템으로 얻을 수 있습니다. <br><br> 근거리 무기의 경우 강화를 통해 부여할 수 있는 인챈트는 추가데미지(모든 객체), 추가데미지(인간형), 추가데미지(벌레), 추가데미지(거대 객체), 스플레시, 반격이 있습니다. <br><br> 원거리 무기의 경우 추가데미지 인챈트만 강화할 수 있습니다.</p>    
             <table border="1" bordercolor="black">
                 <tr bgcolor="white">
                     <p><td colspan="2" align="center">무기 종류</td></p>
@@ -116,8 +139,8 @@
             <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">방어구</span><br><br></p>
         </div>
 
-        <div style="padding-left: 2em;">
-            <p>방어구는 헬멧, 갑옷, 각반, 신발로 이루어져 있다. 방어구는 상점에서 구매하거나 던전 보상 상자, 아이템 제작 시스템으로 얻을 수 있다. <br> 강화를 통해 부여할 수 있는 인챈트는 보호(모든 데미지), 보호(화염), 보호(폭발), 보호(발사체), 반격이 있다.</p>    
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <p>방어구는 헬멧, 갑옷, 각반, 신발로 이루어져 있습니다. 방어구는 상점에서 구매하거나 던전 보상 상자, 아이템 제작 시스템으로 얻을 수 있습니다. <br> 강화를 통해 부여할 수 있는 인챈트는 보호(모든 데미지), 보호(화염), 보호(폭발), 보호(발사체), 반격이 있습니다.</p>    
             <table border="1" bordercolor="black">
                 <tr bgcolor="white">
                     <p><td colspan="2" align="center">방어구 종류</td></p>
@@ -170,11 +193,11 @@
             <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">생활 장비</span><br><br></p>
         </div>
 
-        <div style="padding-left: 2em;">
-            <p>생활 장비는 낫, 채집 도구, 곡괭이로 총 3가지 분류로 이루어져있다. 각각의 생활 장비들은 1~7단계로 세분화되어 있으며, 각 단계별로 다른 채집물을 얻을 수 있다. 
-                <br><br> 낫으로는 <span style="font-weight: bold;">밀</span>을 수확할 수 있으며, 밀은 농부를 통해 환전을 하거나 교역상을 통해 다른 아이템으로 교환할 수 있다. 다른 아이템으로 교환하다보면 숨겨진 세트 방어구를 모을 수도 있다. 숨겨진 세트 방어구를 위한 상인의 위치는 <a href="secretMerchant.html"> 여기</a>에 대략적으로 나와있다.
-                <br><br> 채집 도구로는 닭, 돼지, 소, 양의 <span style="font-weight: bold;">고기</span>를 얻을 수 있다. 고기는 상인을 통해 구울 수 있으며 굽게 된다면 섭취 시 효과가 생기게 된다. 당연히 고기의 질이 높을수록 좋은 효과가 나타난다. 그저 허기를 체우기 위해서라면 고기를 캐는 것보다 상점표 음식을 구입하는 것도 좋다.
-                <br><br> 곡괭이로는 <span style="font-weight: bold;">광석</span>을 채광할 수 있으며, 광석은 이후 상인을 통해 <span style="font-weight: bold;">광물</span>로 변환할 수 있다. 광물은 <span style="font-weight: bold;">강화</span>를 하기 위해 사용된다. 에메랄드 광석을 캐면 화폐도구인 에메랄드가 나온다.
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <p>생활 장비는 낫, 채집 도구, 곡괭이로 총 3가지 분류로 이루어져있습니다. 각각의 생활 장비들은 1~7단계로 세분화되어 있으며, 각 단계별로 다른 채집물을 얻을 수 있습니다. 
+                <br><br> 낫으로는 <span style="font-weight: bold;">밀</span>을 수확할 수 있으며, 밀은 농부를 통해 환전을 하거나 교역상을 통해 다른 아이템으로 교환할 수 있습니다. 다른 아이템으로 교환하다보면 숨겨진 세트 방어구를 모을 수도 있습니다. 숨겨진 세트 방어구를 위한 상인의 위치는 <a href="secretMerchant.html"> 여기</a>에 대략적으로 나와있습니다.
+                <br><br> 채집 도구로는 닭, 돼지, 소, 양의 <span style="font-weight: bold;">고기</span>를 얻을 수 있습니다. 고기는 상인을 통해 구울 수 있으며 굽게 된다면 섭취 시 효과가 생기게 됩니다. 당연히 고기의 질이 높을수록 좋은 효과가 나타납니다. 그저 허기를 체우기 위해서라면 고기를 캐는 것보다 상점표 음식을 구입하는 것도 좋습니다.
+                <br><br> 곡괭이로는 <span style="font-weight: bold;">광석</span>을 채광할 수 있으며, 광석은 이후 상인을 통해 <span style="font-weight: bold;">광물</span>로 변환할 수 있습니다. 광물은 <span style="font-weight: bold;">강화</span>를 하기 위해 사용됩니다. 에메랄드 광석을 캐면 화폐도구인 에메랄드가 나옵니다.
             </p>    
         </div>
 

@@ -2,21 +2,71 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>에일 구원의 서</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
+
+        <style>
+            #topMenu {
+                    height: 42px;
+                    width: 850px;
+            }
+
+            #topMenu ul li {
+                    list-style: none;
+                    color: white;
+                    background-color: #2d2d2d;
+                    float: left;
+                    line-height: 42px;
+                    vertical-align: middle;
+                    text-align: center;
+            }
+
+            #topMenu .menuLink {
+                    text-decoration:none;
+                    color: white;
+                    display: block;
+                    width: 134px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: "Trebuchet MS";
+            }
+            #topMenu .menuLink:hover {
+                    color: red;
+                    background-color: #4d4d4d;
+            }
+
+        </style>
+
     </head>
     <body>
+
+        <div style="background-color: rgb(62, 83, 123);">
+            <nav id="topMenu">
+                <ul>
+                    <li><a class="menuLink" href="index.html"> Home</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="job.html">Job</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="item.html">Item</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="#quest">Quest</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="#map">Map</a>
+                </ul>
+            </nav>
+        </div>
         
-        <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+        
+        <!-- <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
             <div class="container">
-                <!-- <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="#" /></a> -->
+                <a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="#" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" style="padding-left: 40em;"> 
+                </button>                
+                <div class="collapse navbar-collapse" id="show-menu" style="padding-left: 40em;"> 
                         <li class="nav-item">
                             <a class="nav-link" href="index.html"> Home</a>
                         </li>
@@ -34,7 +84,7 @@
                         </li>
                 </div>
             </div>
-        </nav>
+        </nav> -->
         
         <header id="home">
             <div class="overlay">
@@ -56,7 +106,7 @@
                 <div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-6 col-12 text-center">
+                            <div>
                                 <!-- <div class="item">
                                     <img src="imgs/img2.jpg">
                                     <h5 class="text-uppercase">Restaurants</h5>
@@ -77,8 +127,8 @@
                                     <h5 class="text-uppercase">shops and boutiques</h5>
                                 </div> -->
                             </div>
-                            <div>
-                                <p>이 서버의 주요 개발진은 3명이며, 플러그인, 건축, 스토리를 각각 한명씩 맡아 개발하고 있습니다. 메인 퀘스트를 진행하다보면 새로운 직업으로 전직할 수 있는 기회가 생기며, 전직을 하게되면 은행 창고 외의 인벤토리나 레벨 등이 초기화되는 환생 시스템을 가지고 있습니다.</p>
+                            <div style="padding-left: 3em; padding-right: 3em;">
+                                <p>메인 퀘스트를 진행하다보면 새로운 직업으로 전직할 수 있는 기회가 생기며, 전직을 하게되면 은행 창고 외의 인벤토리나 레벨 등이 초기화되는 환생 시스템을 가지고 있습니다.</p>
                                 <!-- <button class="text-center"><a href="#" class="text-capitalize">book now</a></button> -->
                             </div>
                         </div>
@@ -119,7 +169,7 @@
             </div>
         </div>
         
-        <div class="agency" id="agency">
+        <div class="agency">
             <div class="white-overlay">
                 <div class="container">
                     <div class="text-center">                    
