@@ -1,0 +1,5 @@
+https://aile-server.netlify.app
+https://aile-server.netlify.app/index.html
+https://aile-server.netlify.app/item.html
+https://aile-server.netlify.app/job.html
+https://aile-server.netlify.app/secretmerchant
