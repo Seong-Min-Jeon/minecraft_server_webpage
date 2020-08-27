@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>에일 구원의 서 - 지도</title>
+        <meta name="description" content="에일 구원의 서 홈페이지의 지도 페이지입니다.">
+        <link rel="canonical" href="https://aile-server.netlify.app/index.html">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="에일 구원의 서 - 지도">
+        <meta property="og:description" content="에일 구원의 서 홈페이지의 지도 페이지입니다.">
+        <meta property="og:url" content="https://aile-server.netlify.app/job.html">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">  
+
+        <style>
+            #topMenu {
+                    height: 42px;
+                    width: 850px;
+            }
+
+            #topMenu ul li {
+                    list-style: none;
+                    color: white;
+                    background-color: #2d2d2d;
+                    float: left;
+                    line-height: 42px;
+                    vertical-align: middle;
+                    text-align: center;
+            }
+
+            #topMenu .menuLink {
+                    text-decoration:none;
+                    color: white;
+                    display: block;
+                    width: 134px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: "Trebuchet MS";
+            }
+            #topMenu .menuLink:hover {
+                    color: red;
+                    background-color: #4d4d4d;
+            }
+
+        </style>
+
+        <style>
+            #img{
+                width: 960px;
+                height: 640px;
+                max-width: 960px;
+                max-height: 640px;
+                object-fit: none;
+            }
+        </style>
+
+    </head>
+    <body>
+        
+        <div style="background-color: rgb(62, 83, 123);">
+            <nav id="topMenu">
+                <ul>
+                    <li><a class="menuLink" href="index.html"> Home</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="job.html">Job</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="item.html">Item</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="#quest">Quest</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="map.html">Map</a>
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <div class="overlay">
+                <div class="container">
+                    <div>
+                        <h1><span style="color:rgb(128,0,16);">지도</span></h1>
+                        <br>
+                        <p><strong style="padding-left: 2em; padding-right: 2em;"> 그대가 가는 길에 목표가 있을 것입니다.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="text-left" style="background-color: darkgray;">
+            <a class="nav-link" href="#first" style="color: yellow;">* 워그닐</a>
+            <a class="nav-link" href="#second" style="color: yellow;">* 포르간 서쪽 숲</a>
+            <a class="nav-link" href="#third" style="color: yellow;">* 센 마그 평원</a>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="first">
+            <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">워그닐</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <img src="imgs/map1_1.png" id="img">
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <img src="imgs/map1_2.png" id="img">
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="second">
+            <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">포르간 서쪽 숲</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <img src="imgs/map2_1.png" id="img">
+        </div>
+
+        <br>
+        <br>
+        
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <img src="imgs/map2_2.png" id="img">
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="third"">
+            <p style="background-color: yellow;"><br><span style="font-weight: bold; font-size: large; padding-left: 3em;">센 마그 평원</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <img src="imgs/map3_1.png" id="img">
+        </div>
+
+        <br>
+        <br>
+        
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <img src="imgs/map3_2.png" id="img">
+        </div>
+
+        <br>
+        <br>
+        <br>
+       
+
+        <footer>
+            <div class="server address text-center" style="background-color : rgb(250,250,250);color: black;">
+            <p>서버 주소: yumehama.kro.kr</a></p>
+        </footer>
+
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);  
+                
+                $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+                
+                $('.navbar ul li a.search').on('click', function (e) {
+                    e.preventDefault();
+                });
+                $('.navbar a.search').on('click', function () {
+                    $('.navbar form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            })
+        </script>
+    </body>
+</html>
