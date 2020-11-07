@@ -48,6 +48,18 @@
 
         </style>
 
+        <script>
+            var num = 0;
+            function dino() {
+                if(num < 6) {
+                    num++;
+                } else {
+                    num = 0;
+                    window.location = "game.html";
+                }
+            }
+        </script>
+
     </head>
     <body>
 
@@ -71,7 +83,7 @@
             <div class="overlay">
                 <div class="container">
                     <div>
-                        <h1><span style="color:rgb(128,0,16);">에일 구원의 서</span></h1>
+                        <h1><span style="color:rgb(128,0,16);" onclick="dino()">에일 구원의 서</span></h1>
                         <br>
                         <p><strong style="padding-left: 2em;">에일 땅을 구원하기 위한 여정은 그날부터 시작되었다.</strong></p>                        
                     </div>
