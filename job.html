@@ -60,6 +60,18 @@
                 margin-bottom: 10px;
             }
 
+            td {
+                padding: 2px 3px;
+            }
+
+            td:first-child {
+                font-weight: bold;                
+            }
+
+            td:nth-child(4) {
+                color: cornflowerblue;
+            }
+
         </style>
 
     </head>
@@ -113,14 +125,42 @@
                 <p>운영 난이도: 🎇</p>
                 <p>체력: 🎇🎇🎇🎇</p>
                 <p>공격력: 🎇🎇🎇</p>
-                <p>필드 사냥력: 🎇🎇🎇</p>
-                <p>던전 사냥력: 🎇🎇🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇🎇🎇</p>
             </div>
-            <p>처음부터 선택할 수 있는 5가지 <span>1차 직업</span> 중 하나로, 뼈로만 유의한 공격을 할 수 있는 직업입니다.</p>
+            <p>처음부터 선택할 수 있는 5가지 <span>1차 직업</span> 중 하나로, 뼈 이외의 무기를 사용할 수 없는 직업입니다.</p>
             <br>
             <p>다른 무기를 사용할 수 없기 때문에 기본 평타 데미지는 뛰어난 편입니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>3</span>입니다. <br> 기본 스킬은 <span>보호막을 추가</span>하는 생존 스킬<sub>[본 체스트]</sub>입니다. <br> 히든 스킬은 <span>몬스터의 움직임을 멈추는</span> 구속 스킬<sub>[뼈감옥]</sub>입니다. 히든 스킬의 발동 조건은 <span>마나가 딱 3 남은 상태</span>에서 스킬을 사용하는 것입니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>원시의 질주</td>
+                    <td>이동기</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>본 체스트</td>
+                    <td>추가 체력 버프</td>
+                    <td>마나 -4</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>뼈감옥</td>
+                    <td>속도 감소 디버프</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>뼈 던지기</td>
+                    <td>원거리 공격</td>
+                    <td>마나 -10</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -133,7 +173,7 @@
 
         <div style="padding-left: 2em; padding-right: 2em;">
             <div class="eval">
-                <p>운영 난이도: 🎇🎇🎇</p>
+                <p>운영 난이도: 🎇🎇🎇🎇</p>
                 <p>체력: 🎇🎇🎇</p>
                 <p>공격력: 🎇🎇🎇</p>
                 <p>필드 사냥력: 🎇🎇🎇🎇🎇</p>
@@ -143,7 +183,35 @@
             <br>
             <p>자힐 버프의 회복량은 저렙구간에서는 좋다고 생각될지 모르나, 레벨이나 최대 체력과는 상관없이 고정량이기 때문에 2차 직업으로 전직하지 않고 기사를 한다면 많이 힘들 것입니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>3</span>입니다. <br> 기본 스킬은 <span>팬텀 나이트라는 소환수를 소환</span>하는 소환 스킬<sub>[증원]</sub>입니다. <br> 히든 스킬은 <span>더욱 강력한 소환수를 소환</span>하는 소환 스킬<sub>[디바인 링크]</sub>입니다. 히든 스킬의 발동 조건은 <span>마나가 딱 3 남은 상태</span>에서 스킬을 사용하는 것입니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>차지 어택</td>
+                    <td>이동기+견제기</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>증원</td>
+                    <td>골렘 소환</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>전투의 의지</td>
+                    <td>광역 저항 버프</td>
+                    <td>마나 -4</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>자폭</td>
+                    <td>광역기</td>
+                    <td>마나 -1</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -162,11 +230,39 @@
                 <p>필드 사냥력: 🎇🎇🎇🎇🎇</p>
                 <p>던전 사냥력: 🎇🎇🎇🎇</p>
             </div>
-            <p>처음부터 선택할 수 있는 5가지 <span>1차 직업</span> 중 하나로, 지팡이 따위를 사용하진 않지만 힐링에 특화된 직업입니다. 파티플레이에서 중요한 역할을 할 수 있습니다.</p>
+            <p>처음부터 선택할 수 있는 5가지 <span>1차 직업</span> 중 하나로, 지팡이 따위를 사용하진 않지만 힐링에 특화된 직업입니다. 파티 플레이에서 중요한 역할을 할 수 있습니다.</p>
             <br>
             <p>일반적인 프리스트와 다르게 체력도 높은 편입니다. 회복 스킬은 시전자의 체력에 비례하여 회복량이 결정되므로 프리스트의 체력이 높다는 것은 그만큼 스킬 성능이 좋다는 것입니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>3</span>입니다. <br> 기본 스킬은 <span>시전자와 주변 플레이어를 회복</span>하는 회복 스킬<sub>[성스러운 힘]</sub>입니다. <br> 히든 스킬은 <span>시전자의 체력을 모두 회복하고 주변 플레이어를 회복</span>하는 회복 스킬<sub>[죽은 자의 소생]</sub>입니다. 히든 스킬의 발동 조건은 아직 발견되지 않았습니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>텔레포트</td>
+                    <td>이동기</td>
+                    <td>마나 -10</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>넬의 사랑</td>
+                    <td>광역힐</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>딘의 화염</td>
+                    <td>추가 체력 버프</td>
+                    <td>마나 -6</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>펠의 바람</td>
+                    <td>이동기</td>
+                    <td>마나 -2</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -179,17 +275,45 @@
 
         <div style="padding-left: 2em; padding-right: 2em;">
             <div class="eval">
-                <p>운영 난이도: 🎇🎇</p>
+                <p>운영 난이도: 🎇🎇🎇🎇</p>
                 <p>체력: 🎇</p>
                 <p>공격력: 🎇🎇🎇🎇🎇</p>
-                <p>필드 사냥력: 🎇🎇🎇🎇</p>
-                <p>던전 사냥력: 🎇🎇🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇🎇🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇</p>
             </div>
             <p>처음부터 선택할 수 있는 5가지 <span>1차 직업</span> 중 하나로, 오직 딜링에 특화된 직업입니다.</p>
             <br>
-            <p>이름에서 유추할 수 있지만 체력은 모든 직업 중 최하위입니다. 레벨업 시 증가하는 체력 수치가 무려 <span>2</span>>입니다. 체력이 낮다고 평가되는 기사의 증가치가 5인 것으로 보아 매우 낮은 체력을 가지고 있음을 알 수 있습니다.</p>
+            <p>이름에서 유추할 수 있지만 체력은 모든 직업 중 최하위입니다. 레벨업 시 증가하는 체력 수치가 <span>2</span>입니다. 체력이 낮다고 평가되는 기사의 증가치가 5인 것으로 보아 매우 낮은 체력을 가지고 있음을 알 수 있습니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>3</span>입니다. <br> 기본 스킬은 <span>주위 몬스터들에게 데미지를 주는</span> 공격 스킬<sub>[파이널 히트]</sub>입니다. <br> 히든 스킬도 마찬가지로 <span>주위 몬스터들에게 데미지를 주는</span> 공격 스킬<sub>[메그니피센트]</sub>입니다. 히든 스킬의 발동 조건은 아직 발견되지 않았습니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>열귀각</td>
+                    <td>이동기</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>마인권</td>
+                    <td>광역기</td>
+                    <td>마나 -4</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>염옥악</td>
+                    <td>무적기(1초)</td>
+                    <td>마나 -1</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>뇌신장</td>
+                    <td>광역기</td>
+                    <td>마나 -5</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -202,7 +326,7 @@
 
         <div style="padding-left: 2em; padding-right: 2em;">
             <div class="eval">
-                <p>운영 난이도: 🎇🎇🎇🎇🎇</p>
+                <p>운영 난이도: 🎇🎇</p>
                 <p>체력: 🎇🎇🎇🎇🎇</p>
                 <p>공격력: 🎇🎇🎇</p>
                 <p>필드 사냥력: 🎇🎇🎇</p>
@@ -212,7 +336,35 @@
             <br>
             <p>의외로 1차 직업에서 가장 높은 체력을 소유하고 있습니다. 이론상 소환 스킬, 회복 스킬, 광역기 스킬을 모두 사용할 수 있습니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이나 각각의 스킬은 수십개의 하위 스킬을 갖습니다. 스킬을 발동하기 위한 마나는 <span>3</span>입니다. <br> 기본 스킬은 <span>수십가지의 스킬 중 한가지가 랜덤하게 발동되는</span> 랜덤 스킬<sub>[도박사의 판]</sub>입니다. <br> 히든 스킬도 마찬가지로 <span>수십가지의 스킬 중 한가지가 랜덤하게 발동되는</span> 랜덤 스킬<sub>[무조건 이기는 판]</sub>입니다. 히든 스킬의 발동 조건은 <span>마나가 딱 3 남은 상태</span>에서 스킬을 사용하는 것입니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>도박사의 판</td>
+                    <td>이동 관련</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>도박사의 판</td>
+                    <td>버프 관련</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>도박사의 판</td>
+                    <td>랜덤 스킬</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>도박사의 판</td>
+                    <td>마나 관련</td>
+                    <td>마나 -10</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -220,7 +372,7 @@
         <br>
 
         <div id="second"> 
-            <p style="background-color: violet;"><br><span style="font-size: large; padding-left: 3em;">그림자 무사</span><br><br></p>
+            <p style="background-color: rgb(190, 62, 190);"><br><span style="font-size: large; padding-left: 3em;">그림자 무사</span><br><br></p>
         </div>
 
         <div style="padding-left: 2em; padding-right: 2em;">
@@ -233,9 +385,37 @@
             </div>
             <p><span>등대에 숨겨진 비밀</span> 퀘스트의 보상으로 선택할 수 있는 5가지 <span>2차 직업</span> 중 하나로, 스피드에 특화된 직업입니다.</p>
             <br>
-            <p>도박사나 군인이 스킬로 스피드를 강화한 것이 아니라면 1, 2차 직업을 통틀어서 <span>가장 빠른 기본속도</span>를 가지고 있습니다. 게다가 기본 스킬이 광역기이므로 이론상, 치고 빠지면서 스킬로 데미지를 줄 수 있는 안정적인 딜러입니다.</p>
+            <p>1, 2차 직업을 통틀어서 <span>가장 빠른 기본속도</span>를 가지고 있습니다. 스킬들은 암살에 특화되어 있으므로 빠른 플레잉을 원한다면 추천되는 직업입니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 무려 <span>10</span>입니다. <br> 기본 스킬은 <span>주위 몬스터들에게 데미지를 주는</span> 공격 스킬<sub>[발도]</sub>입니다. <br> 히든 스킬도 마찬가지로 <span>주위 몬스터들에게 데미지를 주는</span> 공격 스킬<sub>[나이트메어]</sub>입니다. 히든 스킬의 발동 조건은 아직 발견되지 않았습니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>반역의 날개</td>
+                    <td>광역 신속 버프</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>발도</td>
+                    <td>광역기</td>
+                    <td>마나 -8</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>나이트메어</td>
+                    <td>공격력 버프</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>화둔</td>
+                    <td>원거리 공격</td>
+                    <td>마나 -15</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -243,22 +423,50 @@
         <br>
 
         <div> 
-            <p style="background-color: violet;"><br><span style="font-size: large; padding-left: 3em;">버서커</span><br><br></p>
+            <p style="background-color: rgb(190, 62, 190);"><br><span style="font-size: large; padding-left: 3em;">버서커</span><br><br></p>
         </div>
 
         <div style="padding-left: 2em; padding-right: 2em;">
             <div class="eval">
-                <p>운영 난이도: 🎇🎇🎇</p>
+                <p>운영 난이도: 🎇🎇🎇🎇🎇</p>
                 <p>체력: 🎇</p>
                 <p>공격력: 🎇🎇🎇🎇🎇</p>
-                <p>필드 사냥력: 🎇🎇🎇🎇</p>
-                <p>던전 사냥력: 🎇🎇🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇🎇🎇</p>
             </div>
             <p><span>등대에 숨겨진 비밀</span> 퀘스트의 보상으로 선택할 수 있는 5가지 <span>2차 직업</span> 중 하나로, 딜링에 특화된 직업입니다.</p>
             <br>
-            <p>1차 직업인 광전사와는 플레잉 스타일이 다른 직업입니다. 물론 딜러인 것은 다름이 없으나 딜링에 중요한 광역기가 없습니다.</p>
+            <p>1차 직업인 광전사와는 플레잉 스타일이 다른 직업입니다. 체력이 낮기 때문에 적절한 타이밍에 회복을 해야하며 견제기를 이용해 살아남아야합니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>2</span>입니다. <br> 기본 스킬은 <span>디버프가 걸리지만 풀피가 되는</span> 회복 스킬<sub>[포션의 부작용]</sub>입니다. <br> 히든 스킬도 마찬가지로 <span>디버프가 걸리지만 풀피가 되는</span> 회복 스킬<sub>[포션 중독]</sub>입니다. 기본 스킬과 히든 스킬에서 걸리는 디버프는 종류가 다르지만 아무래도 히든 스킬쪽이 리스크가 적습니다. 히든 스킬의 발동 조건은 아직 발견되지 않았습니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>엘•카나프</td>
+                    <td>이동기</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>엘•페게츠</td>
+                    <td>회복기</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>엘•초펠</td>
+                    <td>이동기+견제기</td>
+                    <td>마나 -10</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>엘•예브른</td>
+                    <td>견제기</td>
+                    <td>마나 -6</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -266,45 +474,50 @@
         <br>
 
         <div> 
-            <p style="background-color: violet;"><br><span style="font-size: large; padding-left: 3em;">군인</span><br><br></p>
-        </div>
-
-        <div style="padding-left: 2em; padding-right: 2em;">
-            <div class="eval">
-                <p>운영 난이도: 🎇🎇🎇🎇</p>
-                <p>체력: 🎇🎇🎇🎇🎇</p>
-                <p>공격력: 🎇</p>
-                <p>필드 사냥력: 🎇🎇</p>
-                <p>던전 사냥력: 🎇</p>
-            </div>
-            <p><span>등대에 숨겨진 비밀</span> 퀘스트의 보상으로 선택할 수 있는 5가지 <span>2차 직업</span> 중 하나로, 곡괭이를 무기로 사용하는 채광에 특화된 직업입니다.</p>
-            <br>
-            <p>기존 1, 2차 직업과는 차별화가 되어있는 생활 위주 직업입니다. 하지만 생활에 도움이 되는 점은 딱히 없습니다. 스킬을 사용하면 <span>성급함</span>효과가 걸리긴하지만 시스템상 사람이 블럭을 클릭할 때마다 채광이 되므로 성급함 버프는 장식일 뿐입니다.  </p>
-            <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>5</span>입니다. <br> 기본 스킬은 <span>독에 걸리지만 스피드와 성급함이 부여되는</span> 버프 스킬<sub>[선임의 명령]</sub>입니다. <br> 히든 스킬은 <span>아직까지 효과가 발견되지 않은</span> 미지의 스킬<sub>[마음의 편지]</sub>입니다. 마음의 편지가 발동되었을 때 '효과가 없었습니다'라는 문구가 뜨기도 합니다. 히든 스킬의 발동 조건과 효과는 아직 발견되지 않았습니다.</p>
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-        <div> 
-            <p style="background-color: violet;"><br><span style="font-size: large; padding-left: 3em;">그림 리퍼</span><br><br></p>
+            <p style="background-color: rgb(190, 62, 190);"><br><span style="font-size: large; padding-left: 3em;">군인</span><br><br></p>
         </div>
 
         <div style="padding-left: 2em; padding-right: 2em;">
             <div class="eval">
                 <p>운영 난이도: 🎇</p>
-                <p>체력: 🎇🎇🎇🎇</p>
+                <p>체력: 🎇🎇🎇🎇🎇</p>
                 <p>공격력: 🎇</p>
-                <p>필드 사냥력: 🎇🎇🎇🎇🎇</p>
-                <p>던전 사냥력: 🎇</p>
+                <p>필드 사냥력: 🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇</p>
             </div>
-            <p><span>등대에 숨겨진 비밀</span> 퀘스트의 보상으로 선택할 수 있는 5가지 <span>2차 직업</span> 중 하나로, 낫을 무기로 사용하는 직업입니다.</p>
+            <p><span>등대에 숨겨진 비밀</span> 퀘스트의 보상으로 선택할 수 있는 5가지 <span>2차 직업</span> 중 하나로, 곡괭이를 무기로 사용하는 채광에 특화된 직업입니다.</p>
             <br>
-            <p>낫을 사용하는 사신의 힘이 느껴지는 직업입니다. 하지만 생활 장비인 낫은 강화가 불가능하며 데미지도 거의 들어가지 않습니다.</p>
+            <p>기존 1, 2차 직업과는 차별화가 되어있는 생활 위주 직업입니다. 채광을 할 때 실패하지 않습니다. 전투에 있어서는 서포터 역할을 할 수 있습니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>2가지</span>이며 스킬을 발동하기 위한 마나는 <span>1</span>입니다. <br> 기본 스킬은 <span>주변 적을 불태워 버리는</span> 공격 스킬<sub>[지옥불]</sub>입니다. <br> 히든 스킬은 아직 발견되지 않았습니다.
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>행군</td>
+                    <td>신속 버프</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>수류탄 투척</td>
+                    <td>원거리 공격</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>구급법</td>
+                    <td>광역힐</td>
+                    <td>마나 -8</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>각개전투</td>
+                    <td>광역 다중 버프</td>
+                    <td>마나 -10</td>
+                </tr>                 
+            </table>
         </div>
 
         <br>
@@ -312,7 +525,88 @@
         <br>
 
         <div> 
-            <p style="background-color: violet;"><br><span style="font-size: large; padding-left: 3em;">아처</span><br><br></p>
+            <p style="background-color: rgb(190, 62, 190);"><br><span style="font-size: large; padding-left: 3em;">그림 리퍼</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <div class="eval">
+                <p>운영 난이도: 🎇🎇🎇🎇</p>
+                <p>체력: 🎇🎇🎇🎇</p>
+                <p>공격력: 🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇🎇</p>
+            </div>
+            <p><span>등대에 숨겨진 비밀</span> 퀘스트의 보상으로 선택할 수 있는 5가지 <span>2차 직업</span> 중 하나로, 낫을 무기로 사용하는 직업입니다.</p>
+            <br>
+            <p>기존 1, 2차 직업과는 차별화가 되어있는 생활 위주 직업입니다. 밀 수확 시 실패하지 않습니다. 전투에 있어서는 영혼의 상태를 바꿔가며 빠른 두뇌회전을 요합니다.</p>
+            <br>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록(붉은 영혼 상태)</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>사신의 걸음</td>
+                    <td>이동기</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>지옥불</td>
+                    <td>광역기</td>
+                    <td>마나 -1</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>칼라수트라</td>
+                    <td>추가 체력 버프</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>폼 체인지</td>
+                    <td>상태 변경</td>
+                    <td>마나 -1</td>
+                </tr>                 
+            </table>
+            <br>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록(푸른 영혼 상태)</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>영혼 걸음</td>
+                    <td>이동기</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>영혼 흡착</td>
+                    <td>광역 디버프기(공격력 약화)</td>
+                    <td>마나 -1</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>카르마</td>
+                    <td>광역기</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>폼 체인지</td>
+                    <td>상태 변경</td>
+                    <td>마나 -1</td>
+                </tr>                 
+            </table>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div> 
+            <p style="background-color: rgb(190, 62, 190);"><br><span style="font-size: large; padding-left: 3em;">아처</span><br><br></p>
         </div>
 
         <div style="padding-left: 2em; padding-right: 2em;">
@@ -327,17 +621,195 @@
             <br>
             <p>활은 다른 직업군의 캐릭터도 사용할 수 있지만, 아처가 쏘는 것만큼 데미지가 강하지는 않습니다. 아처는 근거리 무기를 들고 있을 경우에는 스킬을 발동하지 못하고 데미지가 경감되며, 오직 활을 들고 있을 경우에만 스킬을 발동할 수 있습니다.</p>
             <br>
-            <p>사용 가능한 스킬은 총 <span>4가지</span>입니다. 스킬은 커맨드를 통해 발동이 됩니다. <br> 스킬1은 <span>L-L-L</span>로 <span>바라본 곳의 역방향으로 날라가는</span> 이동 스킬<sub>[이스케이프]</sub>입니다. 소모 마나는 <span>3</span>입니다.
-                <br> 스킬2는 <span>L-L-R</span>로 <span>접근하는 몬스터를 위로 튕겨내는</span> 보호 스킬<sub>[에로우 실드]</sub>입니다. 소모 마나는 <span>3</span>입니다.
-                <br> 스킬3은 <span>L-R-L</span>로 <span>바라본 곳으로 다량의 화살을 발사하는</span> 공격 스킬<sub>[에로우 스톰]</sub>입니다. 소모 마나는 <span>6</span>입니다.
-                <br> 스킬4는 <span>L-R-R</span>로 <span>바라본 곳으로 폭발하는 화살을 쏘는</span> 공격 스킬<sub>[밤 에로우]</sub>입니다. 소모 마나는 <span>8</span>입니다.</p>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>이스케이프</td>
+                    <td>이동기</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>에로우 실드</td>
+                    <td>견제기</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>밤 에로우</td>
+                    <td>광역기</td>
+                    <td>마나 -8</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>에로우 스톰</td>
+                    <td>원거리 공격</td>
+                    <td>마나 -6</td>
+                </tr>                 
+            </table>
         </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div id="third"> 
+            <p style="background-color:  rgb(44, 182, 182);"><br><span style="font-size: large; padding-left: 3em;">데빌</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <div class="eval">
+                <p>운영 난이도: 🎇🎇🎇</p>
+                <p>체력: 🎇🎇🎇</p>
+                <p>공격력: 🎇🎇🎇🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇🎇🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇🎇</p>
+            </div>
+            <p><span>검은 흐름의 힘</span> 퀘스트의 보상으로 선택할 수 있는 3가지 <span>3차 직업</span> 중 하나로, 데빌의 힘을 이용해 공격적인 운영을 할 수 있는 직업입니다.</p>
+            <br>
+            <p>3가지 공격기를 이용해 상황에 맞는 전투를 할 수 있습니다. 악마의 장난으로 소환한 연어 인형은 시한 폭탄으로, 직접 공격하여 폭파시킬 수도 있습니다.</p>
+            <br>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>비공</td>
+                    <td>이동기</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>악마의 장난</td>
+                    <td>광역기</td>
+                    <td>마나 -3</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>데빌 블레스터</td>
+                    <td>광역기</td>
+                    <td>마나 -5</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>인페르노</td>
+                    <td>원거리 공격</td>
+                    <td>마나 -8</td>
+                </tr>                 
+            </table>
+        </div>
+
+        <br>
+        <br>
+        <br>
         
+        <div> 
+            <p style="background-color:  rgb(44, 182, 182);"><br><span style="font-size: large; padding-left: 3em;">엔젤</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <div class="eval">
+                <p>운영 난이도: 🎇</p>
+                <p>체력: 🎇🎇🎇🎇🎇</p>
+                <p>공격력: 🎇🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇🎇🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇</p>
+            </div>
+            <p><span>검은 흐름의 힘</span> 퀘스트의 보상으로 선택할 수 있는 3가지 <span>3차 직업</span> 중 하나로, 튼튼한 힐러 역할을 할 수 있는 직업입니다.</p>
+            <br>
+            <p>강력한 회복기와 버프를 이용해 파티 플레이에서 큰 버팀목이 되어줄 수 있습니다. 직업 기본 버프로 저항 2가 부여되며, 천사의 축복으로 주변 플레이어에게도 저항을 부여할 수 있습니다.</p>
+            <br>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>천사의 날개</td>
+                    <td>이동기</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>천사의 기사단</td>
+                    <td>골렘 소환</td>
+                    <td>마나 -7</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>천사의 심판</td>
+                    <td>광역기</td>
+                    <td>마나 -15</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>천사의 축복</td>
+                    <td>광역힐+버프</td>
+                    <td>마나 -4</td>
+                </tr>                 
+            </table>
+        </div>
+
+        <br>
+        <br>
+        <br>
         
+        <div> 
+            <p style="background-color:  rgb(44, 182, 182);"><br><span style="font-size: large; padding-left: 3em;">대행자</span><br><br></p>
+        </div>
+
+        <div style="padding-left: 2em; padding-right: 2em;">
+            <div class="eval">
+                <p>운영 난이도: 🎇🎇🎇🎇</p>
+                <p>체력: 🎇🎇🎇</p>
+                <p>공격력: 🎇🎇</p>
+                <p>필드 사냥력: 🎇🎇🎇</p>
+                <p>던전 사냥력: 🎇🎇🎇</p>
+            </div>
+            <p><span>검은 흐름의 힘</span> 퀘스트의 보상으로 선택할 수 있는 3가지 <span>3차 직업</span> 중 하나로, 여러 가지 버프를 부여해줄 수 있는 직업입니다.</p>
+            <br>
+            <p>토템을 이용해 지속적인 힐이 가능합니다. 신의 주사위의 효과 대부분이 광역기이기 때문에 솔로 플레이도 걱정이 없습니다.</p>
+            <br>
+            <table border="1" bordercolor="black">
+                <tr>
+                    <p><td colspan="4" align="center">스킬 목록</td></p>
+                </tr>
+                <tr>
+                    <td>RRR</td>
+                    <td>신비의 대행</td>
+                    <td>이동기</td>
+                    <td>마나 -2</td>
+                </tr>
+                <tr>
+                    <td>RRL</td>
+                    <td>창조의 대행</td>
+                    <td>광역힐</td>
+                    <td>마나 -8</td>
+                </tr>
+                <tr>
+                    <td>RLL</td>
+                    <td>신의 주사위</td>
+                    <td>랜덤 스킬</td>
+                    <td>마나 -20</td>
+                </tr>
+                <tr>
+                    <td>RLR</td>
+                    <td>신들의 풍악</td>
+                    <td>광역 다중 버프</td>
+                    <td>마나 -5</td>
+                </tr>                 
+            </table>
+        </div>
+
+        <br>
 
         <div>
             <p style="font-size: 2px; padding-left: 30px; padding-top: 50px;">직업에 대한 평가도는 동일 차시 직업 간의 평가입니다.</p>
-            <p style="font-size: 2px; padding-left: 30px; padding-top: 50px;">던전 사냥력은 대부분 보스 사냥력에 따라 책정되었습니다.</p>
+            <p style="font-size: 2px; padding-left: 30px; padding-top: 2px;">던전 사냥력은 대부분 보스 사냥력에 따라 책정되었습니다.</p>
         </div>
 
         <footer>
