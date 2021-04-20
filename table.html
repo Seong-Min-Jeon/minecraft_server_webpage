@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>에일 구원의 서 - 확률</title>
+        <meta name="description" content="에일 구원의 서 홈페이지의 확률 공개 페이지입니다. ">
+        <link rel="canonical" href="https://aile-server.netlify.app/index.html">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="에일 구원의 서 - 아이템">
+        <meta property="og:description" content="에일 구원의 서 홈페이지의 확률 공개 페이지입니다.">
+        <meta property="og:url" content="https://aile-server.netlify.app/table.html">
+
+        <link rel="stylesheet" href="css/buildStyle.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+
+        <script type="text/javascript" src="js/table_first_rank.js"></script>
+        <script type="text/javascript" src="js/table_first_line.js"></script>
+        <script type="text/javascript" src="js/table_1rank_option.js"></script>
+        <script type="text/javascript" src="js/table_2rank_option.js"></script>
+        <script type="text/javascript" src="js/table_3rank_option.js"></script>
+        <script type="text/javascript" src="js/table_4rank_option.js"></script>
+        <script type="text/javascript" src="js/table_5rank_option.js"></script>
+        <script type="text/javascript" src="js/table_6rank_option.js"></script>
+        <script type="text/javascript" src="js/table_7rank_option.js"></script>
+        <script type="text/javascript" src="js/table_great_metalware_tool.js"></script>
+        <script type="text/javascript" src="js/table_dulb_metalware_tool.js"></script>
+        <script type="text/javascript" src="js/table_goibniu_metalware_tool.js"></script>
+        <script type="text/javascript" src="js/table_creidne_metalware_tool.js"></script>
+
+        <style>
+            #topMenu {
+                    height: 42px;
+                    width: 900px;
+            }
+
+            #topMenu ul li {
+                    list-style: none;
+                    color: white;
+                    background-color: #2d2d2d;
+                    float: left;
+                    line-height: 42px;
+                    vertical-align: middle;
+                    text-align: center;
+            }
+
+            #topMenu .menuLink {
+                    text-decoration:none;
+                    color: white;
+                    display: block;
+                    width: 134px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: "Trebuchet MS";
+            }
+            #topMenu .menuLink:hover {
+                    color: rgb(255, 150, 150);
+                    background-color: #4d4d4d;
+            }
+
+            #gif {
+                background: url("imgs/gif.gif");
+                height: 150px;
+                width: 150px;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        
+        <div style="background-color: rgb(62, 83, 123);">
+            <nav id="topMenu">
+                <ul>
+                    <li><a class="menuLink" href="index.html"> Home</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="job.html">Job</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="item.html">Item</a>
+                    <li>|</li>
+                    <li><a class="menuLink" href="map.html">Map</a>
+                    <li>|</li> 
+                    <li><a class="menuLink" href="command.html">Command</a>    
+                    <li>|</li> 
+                    <li><a class="menuLink" href="table.html">Prob</a>    
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <div class="overlay">
+                <div class="container">
+                    <div>
+                        <h1><span style="color:rgb(128,0,16);">확률</span></h1>
+                        <br>
+                        <p><strong style="padding-left: 2em; padding-right: 2em;">모든 것은 신의 뜻대로 흐를 것입니다.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+         <div class="divTable">
+            <table border="1" bordercolor=#ffffff class="settingTable2">                
+                <tbody class="menu">
+                    <tr>
+                        <td onclick="effect1()" style="cursor: pointer;">의문의 상자 오픈 시 (세공용 장신구)</td>                        
+                        <td onclick="effect3()" style="cursor: pointer;">1랭크에서 등장하는 효과</td>
+                        <td onclick="effect4()" style="cursor: pointer;">2랭크에서 등장하는 효과</td>   
+                        <td onclick="effect5()" style="cursor: pointer;">3랭크에서 등장하는 효과</td>                    
+                    </tr>
+                    <tr>                        
+                        <td onclick="effect6()" style="cursor: pointer;">4랭크에서 등장하는 효과</td>
+                        <td onclick="effect7()" style="cursor: pointer;">5랭크에서 등장하는 효과</td>
+                        <td onclick="effect8()" style="cursor: pointer;">6랭크에서 등장하는 효과</td>
+                        <td onclick="effect9()" style="cursor: pointer;">7랭크에서 등장하는 효과</td>
+                    </tr>
+                    <tr>
+                        <td onclick="effect10()" style="cursor: pointer;">고급 세공 도구 사용 시</td>
+                        <td onclick="effect11()" style="cursor: pointer;">둘브의 세공 도구 사용 시</td>
+                        <td onclick="effect12()" style="cursor: pointer;">게브네의 세공 도구 사용 시</td>
+                        <td onclick="effect13()" style="cursor: pointer;">크레드네의 세공 도구 사용 시</td>
+                    </tr>
+                    
+                </tbody>        
+            </table>           
+        </div>
+
+        <p id="table"></p>
+
+        <footer>
+            <div class="server address text-center" style="background-color : rgb(250,250,250);color: black;">
+            <p>서버 주소: yumehama.kro.kr</a></p>
+        </footer>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);  
+                
+                $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+                
+                $('.navbar ul li a.search').on('click', function (e) {
+                    e.preventDefault();
+                });
+                $('.navbar a.search').on('click', function () {
+                    $('.navbar form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            })
+        </script>
+    </body>
+</html>

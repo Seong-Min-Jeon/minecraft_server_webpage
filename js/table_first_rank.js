@@ -2,7 +2,7 @@ function effect1() {
 
     var table = document.getElementById("table");        
     
-    var str = '<div style="clear: both;" class="divTable">\
+    var str =  '<div style="clear: both;" class="divTable2">\
     <table border="1" bordercolor=#009879 class="settingTable">\
         <thead>\
             <tr>\
@@ -40,11 +40,41 @@ function effect1() {
             </tr> \
         </tbody>\
     </table> \
-</div>'
+</div>\
+        \
+        <br><br>\
+        \
+        <div style="clear: both;" class="divTable2">\
+            <table border="1" bordercolor=#009879 class="settingTable">\
+                <thead>\
+                    <tr>\
+                        <p><td colspan="3" align="center">의문의 상자 오픈 시 효과 개수</td></p>\
+                    </tr>\
+                </thead>\
+                <tbody class="open">\
+                    <tr>\
+                        <th>5줄</th>\
+                        <td>0.01%</td>\
+                    </tr>\
+                    <tr>\
+                        <th>4줄</th>\
+                        <td>0.04%</td>\
+                    </tr>\
+                    <tr>    \
+                        <th>3줄</th>\
+                        <td>0.45%</td>\
+                    </tr>\
+                    <tr>\
+                        <th>2줄</th>\
+                        <td>1.5%</td>\
+                    </tr>    \
+                    <tr>\
+                        <th>1줄</th>\
+                        <td>98%</td>\
+                    </tr>                         \
+                </tbody>        \
+            </table>           \
+        </div>'
 
-    if(table.innerHTML == "해머") {
-        table.innerHTML = "";
-    } else {
-        table.innerHTML = str;                                      
-    }
+    table.innerHTML = str;  
 } 
